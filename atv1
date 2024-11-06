@@ -1,0 +1,241 @@
+1-
+
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+let soma = num1 + num2;
+
+alert(`A soma de ${num1} e ${num2} é: ${soma}`);
+
+2 - 
+
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+
+
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+
+let soma = num1 - num2;
+
+
+alert(`A subtração de ${num1} e ${num2} é: ${subtração}`);
+
+3 -
+
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+
+
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+
+let soma = num1 * num2;
+
+
+alert(`A multiplicação de ${num1} e ${num2} é: ${multiplicação}`);
+
+4 -
+
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+
+
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+
+let soma = num1 / num2;
+
+
+alert(`A divisão de ${num1} e ${num2} é: ${divisão}`);
+
+5 -
+
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+
+
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+
+let soma = num1 % num2;
+
+
+alert(`o resto de ${num1} e ${num2} é: ${resto}`);
+
+6 - 
+
+let num  = 10;
+num++
+
+alert(num)
+
+7 - 
+
+let num  = 10;
+num--
+
+alert(num)
+
+8 -
+
+let a = 78;
+
+let b = a;
+
+alert(b);
+
+9 -
+
+let numero = 5;
+numero += 10;
+
+alert(numero);
+
+10 -
+
+let numero = 5;
+numero -= 5;
+
+alert(numero);
+
+11 - 
+
+let numero = 5;
+numero *= 4;
+
+alert(numero);
+
+12 -
+
+let numero = 24;
+numero /= 2;
+
+alert(numero);
+
+13 -
+
+let numero = 56;
+numero %= 3;
+
+alert(numero);
+
+14 -
+
+function verificarNumero(numero) {
+    if (numero > 0) {
+        return "O número é positivo.";
+    } else if (numero < 0) {
+        return "O número é negativo.";
+    } else {
+        return "O número é zero.";
+    }
+}
+
+let num = prompt("Digite um número:");
+
+num = Number(num);
+
+if (!isNaN(num)) {
+    let resultado = verificarNumero(num);
+    console.log(resultado);
+    alert(resultado); 
+} else {
+    console.log("Por favor, insira um número válido.");
+    alert("Por favor, insira um número válido.");
+}
+
+15 -
+
+function verificarNumero(num) {
+    if (num % 2 === 0) {
+        return "O número é par.";
+    } else {
+        return "O número é ímpar.";
+    }
+}
+
+let numero = prompt("Digite um número:");
+
+numero = parseInt(numero);
+
+alert(verificarNumero(numero));
+
+16 -
+
+function verificarMaior(num1, num2) {
+    if (num1 > num2) {
+        return `${num1} é maior que ${num2}.`;
+    } else if (num2 > num1) {
+        return `${num2} é maior que ${num1}.`;
+    } else {
+        return `Os números são iguais.`;
+    }
+}
+
+const numero1 = parseFloat(prompt("Digite o primeiro número:"));
+const numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+const resultado = verificarMaior(numero1, numero2);
+alert(resultado);
+
+17 -
+
+function verificarIdade(idade) {
+    if (idade >= 18) {
+        return "A pessoa tem 18 anos ou mais.";
+    } else {
+        return "A pessoa tem menos de 18 anos.";
+    }
+}
+
+const idade = parseInt(prompt("Digite a sua idade:"));
+
+const resultado = verificarIdade(idade);
+alert(resultado);
+
+18 -
+
+
+function verificarIntervalo(numero) {
+    if (numero >= 0 && numero <= 100) {
+        console.log(`O número ${numero} está no intervalo entre 0 e 100.`);
+    } else {
+        console.log(`O número ${numero} NÃO está no intervalo entre 0 e 100.`);
+    }
+}
+
+const numero = prompt("Digite um número:"); 
+verificarIntervalo(Number(numero)); 
+
+19 -
+
+function verificarVogalOuConsoante(letra) {
+    letra = letra.toLowerCase();
+    
+    if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+        console.log(`A letra ${letra} é uma vogal.`);
+    } else if (letra >= 'a' && letra <= 'z') {
+        console.log(`A letra ${letra} é uma consoante.`);
+    } else {
+        console.log("Por favor, insira uma letra válida.");
+    }
+}
+
+const letra = prompt("Digite uma letra:"); 
+verificarVogalOuConsoante(letra); 
+
+20 -
+
+function verificarMaiorNumero(num1, num2, num3) {
+    if (num1 >= num2 && num1 >= num3) {
+        console.log("O maior número é: " + num1);
+    } else if (num2 >= num1 && num2 >= num3) {
+        console.log("O maior número é: " + num2);
+    } else {
+        console.log("O maior número é: " + num3);
+    }
+}
+
+const num1 = parseFloat(prompt("Digite o primeiro número:"));
+const num2 = parseFloat(prompt("Digite o segundo número:"));
+const num3 = parseFloat(prompt("Digite o terceiro número:"));
+
+verificarMaiorNumero(num1, num2, num3);
